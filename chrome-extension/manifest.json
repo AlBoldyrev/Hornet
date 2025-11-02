@@ -2,19 +2,15 @@
   "manifest_version": 3,
   "name": "Hornet Word Adder",
   "version": "1.0",
-  "description": "Добавление слов в Hornet через контекстное меню",
-  "permissions": [
-    "contextMenus",
-    "scripting",
-    "activeTab"
-  ],
-  "host_permissions": [
-    "http://localhost:8080/*"
-  ],
+  "description": "Add selected word to Hornet app via context menu",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "host_permissions": ["http://localhost:8080/*"],
   "background": {
     "service_worker": "background.js"
   },
-  "action": {
-    "default_icon": "icon.png"
+  "icons": {
+    "16": "icon_16.png",
+    "48": "icon_48.png",
+    "128": "icon_128.png"
   }
 }
